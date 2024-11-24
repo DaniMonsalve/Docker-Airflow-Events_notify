@@ -1,0 +1,32 @@
+[2024-11-23 14:53:58,223] {taskinstance.py:877} INFO - Dependencies all met for <TaskInstance: download_events.download_events 2024-11-23T14:53:57.633146+00:00 [queued]>
+[2024-11-23 14:53:58,235] {taskinstance.py:877} INFO - Dependencies all met for <TaskInstance: download_events.download_events 2024-11-23T14:53:57.633146+00:00 [queued]>
+[2024-11-23 14:53:58,235] {taskinstance.py:1068} INFO - 
+--------------------------------------------------------------------------------
+[2024-11-23 14:53:58,235] {taskinstance.py:1069} INFO - Starting attempt 1 of 1
+[2024-11-23 14:53:58,235] {taskinstance.py:1070} INFO - 
+--------------------------------------------------------------------------------
+[2024-11-23 14:53:58,242] {taskinstance.py:1089} INFO - Executing <Task(BashOperator): download_events> on 2024-11-23T14:53:57.633146+00:00
+[2024-11-23 14:53:58,245] {standard_task_runner.py:52} INFO - Started process 52 to run task
+[2024-11-23 14:53:58,248] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'download_events', 'download_events', '2024-11-23T14:53:57.633146+00:00', '--job-id', '21', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/Download_images_events.py', '--cfg-path', '/tmp/tmpsi_dtu9q', '--error-file', '/tmp/tmpa7b8h8no']
+[2024-11-23 14:53:58,248] {standard_task_runner.py:77} INFO - Job 21: Subtask download_events
+[2024-11-23 14:53:58,281] {logging_mixin.py:104} INFO - Running <TaskInstance: download_events.download_events 2024-11-23T14:53:57.633146+00:00 [running]> on host 2411326cb425
+[2024-11-23 14:53:58,314] {taskinstance.py:1283} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=download_events
+AIRFLOW_CTX_TASK_ID=download_events
+AIRFLOW_CTX_EXECUTION_DATE=2024-11-23T14:53:57.633146+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-11-23T14:53:57.633146+00:00
+[2024-11-23 14:53:58,314] {bash.py:135} INFO - Tmp dir root location: 
+ /tmp
+[2024-11-23 14:53:58,315] {bash.py:158} INFO - Running command: curl -X GET "https://real-time-events-search.p.rapidapi.com/search-events?query=Concerts%20in%20San-Francisco&date=any&is_virtual=false&start=0" -H "X-RapidAPI-Host: real-time-events-search.p.rapidapi.com" -H "X-RapidAPI-Key: 75942685c4msh154d801d9399610p1732e9jsne785c587b6c7" > /tmp/events_data.json
+[2024-11-23 14:53:58,321] {bash.py:169} INFO - Output:
+[2024-11-23 14:53:58,329] {bash.py:173} INFO -   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+[2024-11-23 14:53:58,329] {bash.py:173} INFO -                                  Dload  Upload   Total   Spent    Left  Speed
+[2024-11-23 14:54:03,227] {bash.py:173} INFO -   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0100 31350  100 31350    0     0   6399      0  0:00:04  0:00:04 --:--:--  8853
+[2024-11-23 14:54:03,228] {bash.py:177} INFO - Command exited with return code 0
+[2024-11-23 14:54:03,252] {taskinstance.py:1192} INFO - Marking task as SUCCESS. dag_id=download_events, task_id=download_events, execution_date=20241123T145357, start_date=20241123T145358, end_date=20241123T145403
+[2024-11-23 14:54:03,268] {local_task_job.py:188} WARNING - State of this instance has been externally set to success. Terminating instance.
+[2024-11-23 14:54:03,269] {process_utils.py:100} INFO - Sending Signals.SIGTERM to GPID 52
+[2024-11-23 14:54:03,269] {taskinstance.py:1265} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-11-23 14:54:03,270] {bash.py:185} INFO - Sending SIGTERM signal to bash process group
+[2024-11-23 14:54:03,276] {process_utils.py:66} INFO - Process psutil.Process(pid=52, status='terminated', exitcode=1, started='14:53:57') (52) terminated with exit code 1

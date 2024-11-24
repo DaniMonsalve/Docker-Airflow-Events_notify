@@ -1,0 +1,32 @@
+[2024-11-23 14:54:04,201] {taskinstance.py:877} INFO - Dependencies all met for <TaskInstance: download_events.get_pictures 2024-11-23T14:53:57.633146+00:00 [queued]>
+[2024-11-23 14:54:04,213] {taskinstance.py:877} INFO - Dependencies all met for <TaskInstance: download_events.get_pictures 2024-11-23T14:53:57.633146+00:00 [queued]>
+[2024-11-23 14:54:04,213] {taskinstance.py:1068} INFO - 
+--------------------------------------------------------------------------------
+[2024-11-23 14:54:04,213] {taskinstance.py:1069} INFO - Starting attempt 1 of 1
+[2024-11-23 14:54:04,213] {taskinstance.py:1070} INFO - 
+--------------------------------------------------------------------------------
+[2024-11-23 14:54:04,219] {taskinstance.py:1089} INFO - Executing <Task(PythonOperator): get_pictures> on 2024-11-23T14:53:57.633146+00:00
+[2024-11-23 14:54:04,222] {standard_task_runner.py:52} INFO - Started process 57 to run task
+[2024-11-23 14:54:04,225] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'download_events', 'get_pictures', '2024-11-23T14:53:57.633146+00:00', '--job-id', '22', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/Download_images_events.py', '--cfg-path', '/tmp/tmp22ml3gdk', '--error-file', '/tmp/tmpm_j8w2vl']
+[2024-11-23 14:54:04,225] {standard_task_runner.py:77} INFO - Job 22: Subtask get_pictures
+[2024-11-23 14:54:04,258] {logging_mixin.py:104} INFO - Running <TaskInstance: download_events.get_pictures 2024-11-23T14:53:57.633146+00:00 [running]> on host 2411326cb425
+[2024-11-23 14:54:04,286] {taskinstance.py:1283} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=download_events
+AIRFLOW_CTX_TASK_ID=get_pictures
+AIRFLOW_CTX_EXECUTION_DATE=2024-11-23T14:53:57.633146+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-11-23T14:53:57.633146+00:00
+[2024-11-23 14:54:04,376] {logging_mixin.py:104} INFO - Downloaded https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdruRz7XCuwMn8J4YkNAiDCY9-86ZtCtsUtg20bGdHJ3HVJE-AfNrFSpFzxg&s=10 to /tmp/images/images?q=tbn:ANd9GcTdruRz7XCuwMn8J4YkNAiDCY9-86ZtCtsUtg20bGdHJ3HVJE-AfNrFSpFzxg&s=10
+[2024-11-23 14:54:04,444] {logging_mixin.py:104} INFO - Downloaded https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIfkKDkosTw7lkC6me4_iv92377oZfpNkOhg9oQz5l4kTQZvOiu4wLfcK6VQ&s=10 to /tmp/images/images?q=tbn:ANd9GcSIfkKDkosTw7lkC6me4_iv92377oZfpNkOhg9oQz5l4kTQZvOiu4wLfcK6VQ&s=10
+[2024-11-23 14:54:04,520] {logging_mixin.py:104} INFO - Downloaded https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoV7JEvHtXGjDOKJVWhKHo55mzRU8l4gpa9PW58lw6gQ&s=10 to /tmp/images/images?q=tbn:ANd9GcQoV7JEvHtXGjDOKJVWhKHo55mzRU8l4gpa9PW58lw6gQ&s=10
+[2024-11-23 14:54:04,584] {logging_mixin.py:104} INFO - Downloaded https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_zpjAnMOYIzSP8ARdKeZHqjHnRN44pAAyFW0gVKvFSjc_k3ANF6P4N0Dq-Mp7&s to /tmp/images/images?q=tbn:ANd9GcQ_zpjAnMOYIzSP8ARdKeZHqjHnRN44pAAyFW0gVKvFSjc_k3ANF6P4N0Dq-Mp7&s
+[2024-11-23 14:54:04,648] {logging_mixin.py:104} INFO - Downloaded https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKlwwsCmY2eR1Hn0wXKDt-2kyJJSQs0lPl6GNOXm2dIQ&s=10 to /tmp/images/images?q=tbn:ANd9GcRKlwwsCmY2eR1Hn0wXKDt-2kyJJSQs0lPl6GNOXm2dIQ&s=10
+[2024-11-23 14:54:04,719] {logging_mixin.py:104} INFO - Downloaded https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCUUPG8_NwwfJvVwlKoqXfFtNAbIdPSFJAkMmknezDls75r3Qa3142DjNJTA&s=10 to /tmp/images/images?q=tbn:ANd9GcQCUUPG8_NwwfJvVwlKoqXfFtNAbIdPSFJAkMmknezDls75r3Qa3142DjNJTA&s=10
+[2024-11-23 14:54:04,783] {logging_mixin.py:104} INFO - Downloaded https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4LHxy4Vks4Q3yspqESzepPY_elUwKvvBWTy2OmX9pvo2Qsyx3waruB1FBeQ&s=10 to /tmp/images/images?q=tbn:ANd9GcT4LHxy4Vks4Q3yspqESzepPY_elUwKvvBWTy2OmX9pvo2Qsyx3waruB1FBeQ&s=10
+[2024-11-23 14:54:04,853] {logging_mixin.py:104} INFO - Downloaded https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwjDPY7BqPbiLkXpOMjJBbLgHQyk82l1CPGzcO55Gx6JqkRnHJdDjZOexZmQ&s=10 to /tmp/images/images?q=tbn:ANd9GcRwjDPY7BqPbiLkXpOMjJBbLgHQyk82l1CPGzcO55Gx6JqkRnHJdDjZOexZmQ&s=10
+[2024-11-23 14:54:04,915] {logging_mixin.py:104} INFO - Downloaded https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRal5QmfrJMEu9axsixxFal1LqdA2L9MxWdd3PbnxMwrwLTIgSsDiZrOfT43m0n&s to /tmp/images/images?q=tbn:ANd9GcRal5QmfrJMEu9axsixxFal1LqdA2L9MxWdd3PbnxMwrwLTIgSsDiZrOfT43m0n&s
+[2024-11-23 14:54:04,979] {logging_mixin.py:104} INFO - Downloaded https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpHdSyqegh_dF6LHUA78M1aNvLBjPKevGX8uZINnNc9slwJ8rvV8V76l6kZg&s=10 to /tmp/images/images?q=tbn:ANd9GcSpHdSyqegh_dF6LHUA78M1aNvLBjPKevGX8uZINnNc9slwJ8rvV8V76l6kZg&s=10
+[2024-11-23 14:54:04,979] {python.py:118} INFO - Done. Returned value was: None
+[2024-11-23 14:54:04,988] {taskinstance.py:1192} INFO - Marking task as SUCCESS. dag_id=download_events, task_id=get_pictures, execution_date=20241123T145357, start_date=20241123T145404, end_date=20241123T145404
+[2024-11-23 14:54:05,011] {taskinstance.py:1246} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-11-23 14:54:05,041] {local_task_job.py:146} INFO - Task exited with return code 0
