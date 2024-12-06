@@ -61,4 +61,8 @@ Notification: A notification is triggered that indicates how many images were su
 ## Website events API processing
 This DAG processes user events collected from an external API to analyze browsing behavior on an imaginary website. The workflow consists of two main tasks: first, retrieving recent events from the API and storing them in a local JSON file, and then processing this data to calculate daily statistics, such as the number of pages visited per user and the average time spent per visit. These statistics are saved in a CSV file, enabling historical analysis beyond the API's 30-day data retention limit.
 
+<img width="251" alt="2024-12-06 13_13_45-01_unscheduled - Graph - Airflow - Perfil 1_ Microsoft​ Edge" src="https://github.com/user-attachments/assets/777c7e04-a5c9-4fb1-a898-47894c0f97c5">
+
 *Check /output/data to see results
+
+<img width="939" alt="2024-12-06 13_13_05-01_unscheduled - Airflow - Perfil 1_ Microsoft​ Edge" src="https://github.com/user-attachments/assets/9fbfad71-a1fe-4430-9541-b74d5a80e62b">
