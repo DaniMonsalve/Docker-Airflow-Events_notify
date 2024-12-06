@@ -1,5 +1,24 @@
-## SUM UP
-This repository contains an Apache Airflow pipeline that automates the process of downloading event data from an external API. It retrieves event information, downloads associated images in binary format, and saves them outside the Docker container, making them accessible from the host system. Finally, the pipeline sends a notification with the count of successfully downloaded images.
+Diferent workflow-orchestrations using Apache-airflow
+
+## Prerequisites
+Before using this pipeline, make sure you have the following installed:
+
+    Docker
+    Apache Airflow
+    Python 3.x
+
+## Folder Structure
+dags/: Contains the Airflow DAG files.
+
+docker-compose.yml: Defines the services for running the Docker containers, including Airflow.
+
+logs/: Contains log files from the DAG runs. (Not included with gitignore)
+
+output/: The directory where downloaded images are saved outside the Docker container, as well other data.
+
+
+## Download Images Events DAG
+Apache Airflow pipeline that automates the process of downloading event data from an external API. It retrieves event information, downloads associated images in binary format, and saves them outside the Docker container, making them accessible from the host system. Finally, the pipeline sends a notification with the count of successfully downloaded images.
 
 <img width="411" alt="graph view" src="https://github.com/user-attachments/assets/ba31f738-cb1b-408b-8e64-409af7ba43b0">
 
@@ -39,21 +58,11 @@ Notification: A notification is triggered that indicates how many images were su
 <img width="938" alt="downloaded images" src="https://github.com/user-attachments/assets/48c29f47-0f51-43e7-9c0d-9fa8a501b1ba">
 
 
+## Website events API processing
+This DAG processes user events collected from an external API to analyze browsing behavior on an imaginary website. The workflow consists of two main tasks: first, retrieving recent events from the API and storing them in a local JSON file, and then processing this data to calculate daily statistics, such as the number of pages visited per user and the average time spent per visit. These statistics are saved in a CSV file, enabling historical analysis beyond the API's 30-day data retention limit.
 
-## Prerequisites
-Before using this pipeline, make sure you have the following installed:
+<img width="251" alt="2024-12-06 13_13_45-01_unscheduled - Graph - Airflow - Perfil 1_ Microsoft​ Edge" src="https://github.com/user-attachments/assets/777c7e04-a5c9-4fb1-a898-47894c0f97c5">
 
-    Docker
-    Apache Airflow
-    Python 3.x
+*Check /output/data to see results
 
-## Folder Structure
-dags/: Contains the Airflow DAG file for downloading events and images.
-
-docker-compose.yml: Defines the services for running the Docker containers, including Airflow.
-
-logs/: Contains log files from the DAG runs.
-
-output/: The directory where downloaded images are saved outside the Docker container.
-
-
+<img width="939" alt="2024-12-06 13_13_05-01_unscheduled - Airflow - Perfil 1_ Microsoft​ Edge" src="https://github.com/user-attachments/assets/9fbfad71-a1fe-4430-9541-b74d5a80e62b">
