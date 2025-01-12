@@ -73,26 +73,27 @@ This Airflow workflow aims to automate the process of downloading, extracting, a
 
 Airflow Workflow Diagram
 
-
+<img width="356" alt="esquema wiki" src="https://github.com/user-attachments/assets/f002e842-8dfa-455b-b7ba-17e15c316c2c" />
 
 Screenshot of the Data Copying Process Inside the Airflow Container
 
-
+<img width="944" alt="copi data inside airflow container" src="https://github.com/user-attachments/assets/ca2be16d-4dc0-4f0c-b507-9b8731ae8aad" />
 
 Evidence of the Docker PostgreSQL Container Running
 
-
+<img width="954" alt="docker postgres container" src="https://github.com/user-attachments/assets/372bf590-a0d2-451c-9b92-473312c0da04" />
 
 How to Access the PostgreSQL Database
 
-
+<img width="869" alt="acceder a postgres database" src="https://github.com/user-attachments/assets/cc0fcf58-b221-40b2-8b49-eafa1d83b821" />
 
 Creation of the Database Used
 
-
+<img width="466" alt="create database" src="https://github.com/user-attachments/assets/1c9de649-b84b-4d64-ba6c-dbd6ad7ddbe5" />
 
 How the Generated PostgreSQL Query Looks
 
+<img width="734" alt="postgres_query generated" src="https://github.com/user-attachments/assets/4839b48d-5bb9-4806-b164-8d6bfa5bd59c" />
 
 
 ## Trigger Workflow
@@ -100,10 +101,14 @@ The workflow in Airflow designed to handle the arrival of supermarket promotion 
 
 Workflow Diagram: The implemented workflow is outlined in the attached diagram, illustrating the sequence and logic of tasks from data detection to processing.
 
+<img width="363" alt="2024-12-19 17_15_33-trigger_workflow - Graph - Airflow y 2 páginas más - Perfil 1_ Microsoft​ Edge" src="https://github.com/user-attachments/assets/12abe16b-94cf-4cec-b991-d02a486ee9f5" />
+<img width="951" alt="2024-12-19 17_02_03-trigger_workflow - Graph - Airflow y 2 páginas más - Perfil 1_ Microsoft​ Edge" src="https://github.com/user-attachments/assets/f5702526-798b-486b-9c73-b92694088b07" />
 
 
 Data Detection Evidence: Screenshots demonstrate the successful detection of available data files and the triggering of subsequent tasks, showcasing the integration of sensors.
 
-
+<img width="939" alt="2024-12-19 17_07_28-trigger_workflow - Airflow y 2 páginas más - Perfil 1_ Microsoft​ Edge" src="https://github.com/user-attachments/assets/a5631a9e-479b-4912-bfb3-b408cb3a28e6" />
 
 Timeout Failure Evidence: Evidence of the timeout mechanism functioning correctly is provided, including logs or visual indicators showing how the system identifies delays and appropriately fails tasks when the timeout is exceeded.
+
+<img width="832" alt="2024-12-19 17_11_38-trigger_workflow - Airflow y 2 páginas más - Perfil 1_ Microsoft​ Edge" src="https://github.com/user-attachments/assets/0790596e-2dc2-4d00-87a7-b959cc1cfaaf" />
