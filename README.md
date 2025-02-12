@@ -120,22 +120,29 @@ In future developments it will be integrated with AWS S3.
 
 The information used is extracted from insideairbnb.com.
 
+<img width="799" alt="Data used from insideairbnb com" src="https://github.com/user-attachments/assets/9d79bdea-21ee-4ccd-8976-b7e655a3b105" />
 
 
 postgres connection created in airflow.
 
+<img width="924" alt="postgres connection created in airflow" src="https://github.com/user-attachments/assets/871ba86c-463c-4110-92d5-af8440570f13" />
 
 
 Data preprocessing:
 
+<img width="834" alt="data preprocessed" src="https://github.com/user-attachments/assets/b828667a-5cea-4dc8-a320-50194a716aba" />
 
 
 example of a correct execution:
 
+<img width="938" alt="Ejemplo ejecución correcta" src="https://github.com/user-attachments/assets/e735bc42-a696-4bbf-ad95-17140c7db317" />
 
 
 The Postgres table is accessed and the structure of the table to be used is checked.
 
+<img width="709" alt="Acceder a la tabla y comprobar la estructura de esta" src="https://github.com/user-attachments/assets/0ae05b82-c94e-4938-aaf0-d98760987bdf" />
 
 
 An example of the information recorded in the table above during the job execution:
+
+<img width="950" alt="Ejemplo información cargada en postgres" src="https://github.com/user-attachments/assets/9fff9aef-398d-4f25-a3f8-2dffab4f394b" />
