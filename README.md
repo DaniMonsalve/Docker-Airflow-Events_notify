@@ -112,3 +112,30 @@ Data Detection Evidence: Screenshots demonstrate the successful detection of ava
 Timeout Failure Evidence: Evidence of the timeout mechanism functioning correctly is provided, including logs or visual indicators showing how the system identifies delays and appropriately fails tasks when the timeout is exceeded.
 
 <img width="832" alt="2024-12-19 17_11_38-trigger_workflow - Airflow y 2 páginas más - Perfil 1_ Microsoft​ Edge" src="https://github.com/user-attachments/assets/0790596e-2dc2-4d00-87a7-b959cc1cfaaf" />
+
+
+## Communicating with external systems (airbnb_postgres_to_s3)
+This development aims to create a process for moving and transforming data between different systems, focusing on database integration and data processing in Docker containers. It works with an Airbnb dataset from Amsterdam stored in PostgreSQL, which is extracted daily.
+In future developments it will be integrated with AWS S3.
+
+The information used is extracted from insideairbnb.com.
+
+
+
+postgres connection created in airflow.
+
+
+
+Data preprocessing:
+
+
+
+example of a correct execution:
+
+
+
+The Postgres table is accessed and the structure of the table to be used is checked.
+
+
+
+An example of the information recorded in the table above during the job execution:
